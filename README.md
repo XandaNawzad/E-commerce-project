@@ -1,4 +1,4 @@
-# WeCommerce
+# e-commerce-project 
 
 This is a test ecommerce project built for learning purposes.
 
