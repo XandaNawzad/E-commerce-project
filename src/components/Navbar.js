@@ -35,7 +35,7 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-indigo-900">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-4">
+          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-5 pb-2">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -51,9 +51,9 @@ export default function Navbar() {
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                  
-                  <img src="https://file.removal.ai/preview/tmp-630e2e560bc02.png"  width="45px" height="45px" /> &nbsp;&nbsp;&nbsp;&nbsp;
+                  <img src="https://file.removal.ai/preview/tmp-630f253012f12.png"  width="45px" height="45px" className="pt-2  pb-2"/> &nbsp;&nbsp;&nbsp;&nbsp;
 
-                  <img src="https://file.removal.ai/preview/tmp-630e7c90855dc.png"  width="100px" height="100px" />
+                  <img src="https://file.removal.ai/preview/tmp-630f656756d1b.png"  width="100px" height="100px" className="pt-2 pb-2"/>
 
                 </div>
                 <div className="hidden sm:block sm:ml-6">
@@ -206,7 +206,7 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-4 pb-3 space-y-1">
+            <div className="px-2 pt-5 pb-2  space-y-1">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
