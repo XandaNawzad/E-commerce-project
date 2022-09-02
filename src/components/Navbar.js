@@ -50,20 +50,16 @@ export default function Navbar() {
               </div>
 
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex-shrink-0 flex items-center">
-                
-                    
+                <div className="flex-shrink-0 flex items-center">           
                   <img
-                   className="hidden lg:block h-8 w-auto "
+                   className="hidden lg:block h-10 w-auto"
                     src="https://file.removal.ai/preview/tmp-6311780d4624a.png"
-                    alt="icons" width="100%" height="100%"
-                  /> &nbsp;&nbsp;&nbsp;&nbsp;
-
+                    alt="icons" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                   <img
-                    className="hidden lg:block h-8 w-auto"
+                    className="hidden lg:block h-10 w-auto"
                     src="https://file.removal.ai/preview/tmp-631178427ed65.png"
-                    alt="e-commerce" width="100%" height="100%"
-                  />
+                    alt="e-commerce" />
                 </div>
       
                 <div className="hidden sm:block sm:ml-6">

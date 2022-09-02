@@ -28,7 +28,7 @@ export default function Login() {
   }
 
   return (
-    <div className="bg-indigo-600 min-h-screen p-10 flex items-center justify-center">
+    <div className="bg-indigo-900 min-h-screen p-10 flex items-center justify-center">
       <div className="container mx-auto flex items-center justify-center">
         <div className="bg-white p-10 rounded-lg shadow-xl w-96">
           <form className="grid grid-cols-1" onSubmit={submitHandler}>
@@ -45,7 +45,7 @@ export default function Login() {
             />
             <label htmlFor="password"> Password</label>
             <input
-              className="bg-gray-100 rounded-md mb-3 focus:ring-2   "
+              className="bg-gray-100 rounded-md mb-3 focus:ring-2"
               type="text"
               name="password"
               id="password"
@@ -55,7 +55,7 @@ export default function Login() {
 
             <button
               type="submit"
-              className="bg-indigo-600 p-1 rounded-full text-white px-4 hover:bg-indigo-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="bg-indigo-600 p-1 rounded-full text-white px-4 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
             >
               Login
             </button>
