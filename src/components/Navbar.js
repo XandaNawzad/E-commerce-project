@@ -35,7 +35,7 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-indigo-900">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-5 pb-2">
+          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-3 pb-2">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -48,14 +48,24 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
+
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                 
-                  <img src="https://file.removal.ai/preview/tmp-630f253012f12.png"  width="45px" height="45px" className="pt-2  pb-2"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    
+                  <img
+                   className="hidden lg:block h-8 w-auto "
+                    src="https://file.removal.ai/preview/tmp-6311780d4624a.png"
+                    alt="icons" width="100%" height="100%"
+                  /> &nbsp;&nbsp;&nbsp;&nbsp;
 
-                  <img src="https://file.removal.ai/preview/tmp-630f656756d1b.png"  width="100px" height="100px" className="pt-2 pb-2"/>
-
+                  <img
+                    className="hidden lg:block h-8 w-auto"
+                    src="https://file.removal.ai/preview/tmp-631178427ed65.png"
+                    alt="e-commerce" width="100%" height="100%"
+                  />
                 </div>
+      
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item, index) => (
@@ -206,7 +216,7 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-5 pb-2  space-y-1">
+            <div className="px-2 pt-3 pb-2  space-y-1">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
