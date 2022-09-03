@@ -75,7 +75,7 @@ export default function Login() {
               <button className=" mt-1 underline">Forgot password?</button>{' '}
               <br />
               <button className=" mt-1 underline">
-                Don't have account? <span  className="bg-indigo-600 p-1 rounded-full text-white px-4 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"> Register</span>
+                Don't have account? <span className="bg-indigo-600 p-1 rounded-full text-white px-4 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"> Register</span>
               </button>
             </div>
           </form>

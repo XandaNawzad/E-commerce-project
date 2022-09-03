@@ -53,7 +53,7 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">           
                   <img
                    className="hidden lg:block h-10 w-auto"
-                    src="https://file.removal.ai/preview/tmp-6312c956955da.png"
+                    src="https://file.removal.ai/preview/tmp-6312db2fbc6bf.png"
                     alt="icons" />
                     &nbsp;&nbsp;&nbsp;&nbsp;
                   <img
