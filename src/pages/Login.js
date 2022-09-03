@@ -27,6 +27,8 @@ export default function Login() {
     console.log(form);
   }
 
+  
+
   return (
     <div className="bg-indigo-900 min-h-screen p-10 flex items-center justify-center">
       <div className="container mx-auto flex items-center justify-center">
@@ -46,12 +48,21 @@ export default function Login() {
             <label htmlFor="password"> Password</label>
             <input
               className="bg-gray-100 rounded-md mb-3 focus:ring-2"
-              type="text"
+              type="password"
               name="password"
               id="password"
               value={form.password || ''}
               onChange={onChangeHandler}
             />
+
+            <lable>show password</lable>
+
+            
+
+              
+   
+
+
 
             <button
               type="submit"
@@ -64,7 +75,7 @@ export default function Login() {
               <button className=" mt-1 underline">Forgot password?</button>{' '}
               <br />
               <button className=" mt-1 underline">
-                Don't have account? Register.
+                Don't have account? <span  className="bg-indigo-600 p-1 rounded-full text-white px-4 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"> Register</span>
               </button>
             </div>
           </form>

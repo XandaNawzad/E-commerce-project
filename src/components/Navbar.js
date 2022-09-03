@@ -53,12 +53,12 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">           
                   <img
                    className="hidden lg:block h-10 w-auto"
-                    src="https://file.removal.ai/preview/tmp-6311780d4624a.png"
+                    src="https://file.removal.ai/preview/tmp-6312c956955da.png"
                     alt="icons" />
                     &nbsp;&nbsp;&nbsp;&nbsp;
                   <img
                     className="hidden lg:block h-10 w-auto"
-                    src="https://file.removal.ai/preview/tmp-631178427ed65.png"
+                    src="https://file.removal.ai/preview/tmp-6312c9a9d45e9.png"
                     alt="e-commerce" />
                 </div>
       
