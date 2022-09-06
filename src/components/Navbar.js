@@ -21,11 +21,13 @@ export default function Navbar() {
 
   const [navigation, setNavigation] = useState([
     { name: 'Home', href: '/', current: true },
+    { name: 'About', href: '/about', current: false },
     { name: 'Products', href: '/products', current: false },
     { name: 'Categories', href: '/categories', current: false },
     { name: 'Feedback', href: '/feedback', current: false },
     { name: 'Form', href: '/form', current: false },
-    { name: 'About', href: '/about', current: false },
+  
+   
   ]);
 
   useEffect(() => {
@@ -53,12 +55,12 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">           
                   <img
                    className="hidden lg:block h-10 w-auto"
-                    src="https://file1.removal.ai/preview/adb2e66d-d11e-44fc-befd-6b01eb4ebf07.png"
+                    src="./logo1.png"
                     alt="icons" />
                     &nbsp;&nbsp;&nbsp;&nbsp;
                   <img
                     className="hidden lg:block h-10 w-auto"
-                    src="https://file.removal.ai/preview/tmp-631373f21088e.png"
+                    src="./logo2.png"
                     alt="e-commerce" />
                 </div>
       
@@ -81,6 +83,7 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
+
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button onClick={() => i18n.changeLanguage('en')}>en</button>
                 <button
@@ -124,7 +127,7 @@ export default function Navbar() {
                     </NavLink> 
                     <Link
                       to="/login"
-                      className="bg-sky-500 p-2 rounded-full text-white px-5 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                      className="bg-sky-500 p-2 rounded-md text-white px-5 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                       onClick={() => dispatch(logout())}
                     >
                       <span className="sr-only">View notifications</span>
@@ -135,7 +138,7 @@ export default function Navbar() {
                 ) : (
                   <Link
                     to="/login"   
-                    className="bg-sky-500 p-2 rounded-full text-white px-5 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                    className="bg-sky-500 p-2 rounded-md text-white px-5 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                   >
                     <span className="sr-only">View notifications</span>
                     {/* <BellIcon className="h-6 w-6" aria-hidden="true" /> */}
@@ -210,7 +213,6 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-3 pb-2  space-y-1">
               {navigation.map((item) => (

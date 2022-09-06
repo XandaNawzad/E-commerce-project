@@ -39,6 +39,7 @@ export default function SignupForm() {
       {formik.errors.username ? (
         <p className="text-red-500"> {formik.errors.username}</p>
       ) : null}
+      
       <label htmlFor="email">Email Address</label>
       <input
         id="email"

@@ -17,7 +17,7 @@ export default function Products() {
   const nextButton = (
     <button className="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
       <svg
-        xmlns="http://www.w3.org/2000/svg"
+        xmlns="./logo1.png"
         class="h-6 w-6"
         fill="none"
         viewBox="0 0 24 24"
@@ -35,7 +35,7 @@ export default function Products() {
   const prevButton = (
     <button className="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
       <svg
-        xmlns="http://www.w3.org/2000/svg"
+        xmlns="./logo2.png"
         class="h-6 w-6"
         fill="none"
         viewBox="0 0 24 24"
