@@ -55,13 +55,15 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">           
                   <img
                    className="hidden lg:block h-10 w-auto"
-                    src="./logo1.png"
-                    alt="icons" />
+                    src="./logo192.png"
+                    alt="icons" 
+                    />
                     &nbsp;&nbsp;&nbsp;&nbsp;
                   <img
-                    className="hidden lg:block h-10 w-auto"
-                    src="./logo2.png"
-                    alt="e-commerce" />
+                    className="hidden lg:block h-10 mr-1 w-auto"
+                    src="./logo512.png"
+                    alt="e-commerce"
+                     />
                 </div>
       
                 <div className="hidden sm:block sm:ml-6">
@@ -85,22 +87,28 @@ export default function Navbar() {
               </div>
 
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button onClick={() => i18n.changeLanguage('en')}>en</button>
                 <button
-                  onClick={() => {
-                    i18n.changeLanguage('ku');
-                    localStorage.setItem('language', 'ku');
-                  }}
-                >
-                  ku
+                className="text-white mx-1"
+                onClick={() => { i18n.changeLanguage('en');
+                    localStorage.setItem('language', 'en'); }}
+                 >
+                  English
                 </button>
+
                 <button
-                  onClick={() => {
-                    i18n.changeLanguage('ar');
-                    localStorage.setItem('language', 'ar');
-                  }}
+                className="text-white mx-1"
+                onClick={() => { i18n.changeLanguage('ku');
+                    localStorage.setItem('language', 'ku'); }}
                 >
-                  ar
+                  Kurdish
+                </button>
+
+                <button
+                className="text-white mx-1"
+                onClick={() => { i18n.changeLanguage('ar');
+                    localStorage.setItem('language', 'ar'); }}
+                 >
+                  Arabi
                 </button>
 
                 {JSON.stringify(cart.products.length)}

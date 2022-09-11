@@ -5,7 +5,9 @@ import './App.css';
 import { login } from './app/slices/authSlice';
 import { useDispatch } from 'react-redux';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Navbar from './components/Navbar';
+
+import Footer from './components/Footer';
+
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -48,6 +50,7 @@ function App() {
 
   return (
     <div>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
@@ -55,14 +58,18 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="products" element={<Products />} />
-        <Route path="categories" element={<Categories />} />
+        <Route path="categories" element={<Categories />}/> 
         <Route path="feedback" element={<Feedback />} />
         <Route path="form" element={<Form />} />
         <Route path="form" element={<Form />} />
 
         <Route path="products/:id" element={<Product />} />
       </Routes>
+      <br></br><br></br>
+      <Footer />
     </div>
+
+
   );
 }
 

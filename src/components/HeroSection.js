@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import ReactCarousel from './ReactCarousel';
 import { useTranslation } from 'react-i18next';
 export default function HeroSection() {
@@ -12,14 +14,29 @@ export default function HeroSection() {
           <span className="text-indigo-600">{t('welcome.shop')}</span>
         </h2>
         <p className="text-2xl text-gray-500 mt-3">{t('welcome.title')}</p>
-        <div className="mt-10">
-          <button className="shadow-md hover:shadow-lg bg-indigo-600 text-white px-6 py-4 rounded-lg text-xl font-semibold mr-4">
-            View Products
-          </button>
-          <button className="shadow-md hover:shadow-lg bg-white text-indigo-600 px-6 py-4 rounded-lg text-xl font-semibold">
-            View Categories
-          </button>
+
+        <div className="mt-10 mb-10">
+        <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start ">
+          <div className="rounded-md shadow mt-3  sm:mt-0 sm:ml-3 " >
+            <Link
+              to="/Products"
+              className="shadow-md hover:shadow-lg bg-indigo-600 text-white px-5 py-4 rounded-lg text-xl font-semibold mr-4"
+            >
+              View Products
+            </Link>
+        
+         
+            <Link
+              to="/Categories"
+              className="shadow-md hover:shadow-lg bg-white text-indigo-600 px-5 py-4 rounded-lg text-xl font-semibold"
+            >
+                 View Categories
+            </Link>
+            </div>
         </div>
+
+        </div>
+
       </div>
       <div className="">
         {/* <img
