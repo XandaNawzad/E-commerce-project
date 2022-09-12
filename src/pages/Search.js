@@ -52,10 +52,23 @@ export default function Feedback() {
 
   return (
     <Layout>
+    
+      <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 text-center">
+        <h2 className="text-3xl font-bold tracking-tight  text-indigo-600 ">
+          Search for Products that interest you
+        </h2>
+        <h2 className="text-xl tracking-tight text-gray-600  mt-4">
+          Collections of our best Products
+        </h2> 
+        </div>
+
       <Select
         options={options}
         onChange={(selected) => alert(JSON.stringify(selected.label))}
       />
+            <br></br><br></br>  <br></br><br></br>   <br></br><br></br>   <br></br><br></br>
+            <br></br><br></br>  <br></br><br></br>   
+
     </Layout>
   );
 }

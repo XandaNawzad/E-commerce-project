@@ -24,7 +24,7 @@ export default function Navbar() {
     { name: 'About', href: '/about', current: false },
     { name: 'Products', href: '/products', current: false },
     { name: 'Categories', href: '/categories', current: false },
-    { name: 'Feedback', href: '/feedback', current: false },
+    { name: 'Search', href: '/search', current: false },
     { name: 'Form', href: '/form', current: false },
   
    

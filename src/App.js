@@ -17,11 +17,13 @@ import Register from './pages/Register';
 import Products from './pages/Products';
 import Product from './pages/Product';
 import Categories from './pages/Categories';
-import Feedback from './pages/Feedback';
+import Search from './pages/Search';
 import Form from './pages/Form';
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 import { updateCart } from './app/slices/cartSlice';
+
+
 function App() {
   const dispatch = useDispatch();
   const { i18n } = useTranslation();
@@ -59,7 +61,7 @@ function App() {
         <Route path="register" element={<Register />} />
         <Route path="products" element={<Products />} />
         <Route path="categories" element={<Categories />}/> 
-        <Route path="feedback" element={<Feedback />} />
+        <Route path="search" element={<Search />} />
         <Route path="form" element={<Form />} />
         <Route path="form" element={<Form />} />
 
