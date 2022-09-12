@@ -4,6 +4,8 @@ import Layout from '../layouts/MainLayout';
 import ProductsList from '../components/ProductsList';
 import LoadingSpinner from '../components/LoadingSpinner';
 import ReactPaginate from 'react-paginate';
+
+
 export default function Products() {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -94,8 +96,19 @@ export default function Products() {
 
   return (
     <Layout>
+
+      <div className="max-w-2xl mx-auto pt-16 px-4 sm:pt-24 sm:px-6 lg:max-w-7xl lg:px-8 text-center ">
+      <h2 className="text-3xl font-bold tracking-tight text-indigo-600 ">
+            Find Products that interest you
+       </h2>
+       <h2 className="text-xl tracking-tight text-gray-500  mt-4">
+            Collections of Products to our store
+        </h2>
+        </div>
+
       <ProductsList products={currentItems} />
       {/* pagination component here */}
+
       <div className="container mx-auto flex justify-center mb-10">
         <ReactPaginate
           breakLabel="..."
@@ -110,6 +123,7 @@ export default function Products() {
           renderOnZeroPageCount={null}
         />
       </div>
+
     </Layout>
   );
 }

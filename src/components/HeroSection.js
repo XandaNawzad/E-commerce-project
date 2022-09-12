@@ -24,13 +24,12 @@ export default function HeroSection() {
             >
               View Products
             </Link>
-        
-         
+
             <Link
-              to="/Categories"
+              to="/Search"
               className="shadow-md hover:shadow-lg bg-white text-indigo-600 px-5 py-4 rounded-lg text-xl font-semibold"
             >
-                 View Categories
+              View Search
             </Link>
             </div>
         </div>
