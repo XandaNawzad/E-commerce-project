@@ -108,7 +108,6 @@ export default function Products() {
 
       <ProductsList products={currentItems} />
       {/* pagination component here */}
-
       <div className="container mx-auto flex justify-center mb-10">
         <ReactPaginate
           breakLabel="..."
