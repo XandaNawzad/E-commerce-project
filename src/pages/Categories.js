@@ -20,12 +20,19 @@ export default function Categories() {
   }
 
   return (
-    <Layout>
+      
+      <Layout>
+        <div className="mx-4 my-4">
+      <br></br>
       <ReactModal />
-
       {/* <Select options={options} /> */}
-
+      <br></br>
       <input multiple type="file" name="file" onChange={handleUpload} />
-    </Layout>
+      </div>
+      <br></br><br></br>  <br></br><br></br>   <br></br><br></br>   <br></br><br></br>
+      <br></br><br></br>  <br></br><br></br>   <br></br><br></br>   <br></br><br></br>
+      <br></br><br></br>  <br></br><br></br>
+      </Layout>
+    
   );
 }
