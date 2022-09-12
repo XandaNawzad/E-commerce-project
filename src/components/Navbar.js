@@ -108,7 +108,7 @@ export default function Navbar() {
                 onClick={() => { i18n.changeLanguage('ar');
                     localStorage.setItem('language', 'ar'); }}
                  >
-                  Arabi
+                  Arabic
                 </button>
 
                 {JSON.stringify(cart.products.length)}
