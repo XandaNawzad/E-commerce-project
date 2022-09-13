@@ -10,7 +10,7 @@ export default function LeafletMap() {
   return (
     <div className="h-96 w-96 container mx-auto mt-12">
       <MapContainer
-        center={[36.19125374221944, 44.00914381197795]}
+        center={[35.5632375,45.3076142]}
         zoom={10}
         style={{ height: '100%', width: 'auto' }}
       >
@@ -18,7 +18,7 @@ export default function LeafletMap() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={[36.19125374221944, 44.00914381197795]}>
+        <Marker position={[35.5632375,45.3076142]}>
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>

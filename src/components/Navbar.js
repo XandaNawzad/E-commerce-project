@@ -7,6 +7,8 @@ import { useLocation, NavLink, Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../app/slices/authSlice';
 import { useTranslation } from 'react-i18next';
+import logo from '../assets/logo.png';
+import icon from'../assets/logo192.png';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -54,14 +56,14 @@ export default function Navbar() {
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">           
                   <img
-                   className="hidden lg:block h-10 w-auto"
-                    src="./logo192.png"
+                   className=" lg:block h-10 w-auto"
+                    src={icon}
                     alt="icons" 
                     />
                     &nbsp;&nbsp;&nbsp;&nbsp;
                   <img
-                    className="hidden lg:block h-10 mr-1 w-auto"
-                    src="./logo512.png"
+                    className="lg:block h-10 mr-1 w-auto"
+                    src={logo}
                     alt="e-commerce"
                      />
                 </div>
@@ -92,7 +94,7 @@ export default function Navbar() {
                 onClick={() => { i18n.changeLanguage('en');
                     localStorage.setItem('language', 'en'); }}
                  >
-                  English
+                  Eng
                 </button>
 
                 <button
@@ -100,7 +102,7 @@ export default function Navbar() {
                 onClick={() => { i18n.changeLanguage('ku');
                     localStorage.setItem('language', 'ku'); }}
                 >
-                  Kurdish
+                  Kur
                 </button>
 
                 <button
@@ -108,7 +110,7 @@ export default function Navbar() {
                 onClick={() => { i18n.changeLanguage('ar');
                     localStorage.setItem('language', 'ar'); }}
                  >
-                  Arabic
+                  Ara
                 </button>
 
                 {JSON.stringify(cart.products.length)}
@@ -155,7 +157,7 @@ export default function Navbar() {
                   </Link>  
                    
                 ) }
-                   
+
                     <Link
                       to="/SignUp"
                       className="bg-slate-200 p-2 rounded-md text-sky-500 px-5 hover:bg-slate-300  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
