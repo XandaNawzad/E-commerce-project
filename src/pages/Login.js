@@ -29,7 +29,7 @@ export default function Login() {
   }
 
   return (
-    <div className="bg-sky-400 min-h-screen p-10 flex items-center justify-center">
+    <div className="bg-sky-300 min-h-screen p-10 flex items-center justify-center">
       <div className="container mx-auto flex items-center justify-center">
         <div className="bg-white p-10 rounded-lg shadow-xl w-96">
           <form className="grid grid-cols-1" onSubmit={submitHandler}>
