@@ -135,24 +135,33 @@ export default function Navbar() {
                     </NavLink> 
                     <Link
                       to="/login"
-                      className="bg-sky-500 p-2 rounded-md text-white px-5 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                      className="bg-sky-500 p-2 rounded-md text-white px-5 hover:bg-sky-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white mx-3"
                       onClick={() => dispatch(logout())}
                     >
                       <span className="sr-only">View notifications</span>
                       {/* <BellIcon className="h-6 w-6" aria-hidden="true" /> */}
                       Logout
                     </Link>
+
                   </>
                 ) : (
                   <Link
                     to="/login"   
-                    className="bg-sky-500 p-2 rounded-md text-white px-5 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                    className="bg-sky-500 p-2 rounded-md text-white px-5 hover:bg-sky-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white mx-3"
                   >
                     <span className="sr-only">View notifications</span>
                     {/* <BellIcon className="h-6 w-6" aria-hidden="true" /> */}
                     Login
-                  </Link>
-                )}
+                  </Link>  
+                   
+                ) }
+                   
+                    <Link
+                      to="/SignUp"
+                      className="bg-slate-200 p-2 rounded-md text-sky-500 px-5 hover:bg-slate-300  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                      onClick={() => dispatch(logout())}
+                    > Sign Up 
+                    </Link>
 
                 {/* Profile dropdown */}
                 {/* <Menu as="div" className="ml-3 relative">

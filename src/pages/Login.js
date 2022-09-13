@@ -3,6 +3,7 @@ import { login } from '../app/slices/authSlice';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+
 export default function Login() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -27,27 +28,25 @@ export default function Login() {
     console.log(form);
   }
 
-  
-
   return (
-    <div className="bg-indigo-900 min-h-screen p-10 flex items-center justify-center">
+    <div className="bg-sky-400 min-h-screen p-10 flex items-center justify-center">
       <div className="container mx-auto flex items-center justify-center">
         <div className="bg-white p-10 rounded-lg shadow-xl w-96">
           <form className="grid grid-cols-1" onSubmit={submitHandler}>
             <h2 className="text-center mb-5 text-2xl font-bold">Login Page</h2>
 
-            <label htmlFor="username"> Username</label>
+            <label htmlFor="username"> Email Address </label>
             <input
-              className="bg-gray-100 rounded-md mb-3"
+              className="bg-gray-100 rounded-md mb-3 text-2xl"
               type="text"
-              name="username"
-              id="username"
-              value={form.username || ''}
+              name="Email address"
+              id="Email address"
+              value={form.emailaddresss || ''}
               onChange={onChangeHandler}
             />
             <label htmlFor="password"> Password</label>
             <input
-              className="bg-gray-100 rounded-md mb-3 focus:ring-2"
+              className="bg-gray-100 rounded-md mb-3 focus:ring-2 text-2xl"
               type="password"
               name="password"
               id="password"
@@ -55,18 +54,13 @@ export default function Login() {
               onChange={onChangeHandler}
             />
 
-            <lable>show password</lable>
+            <br></br>
 
-            
-
-              
-   
-
-
+ 
 
             <button
               type="submit"
-              className="bg-indigo-600 p-1 rounded-full text-white px-4 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="bg-sky-500 p-1 rounded-full text-white px-4 hover:bg-sky-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
             >
               Login
             </button>
@@ -75,7 +69,7 @@ export default function Login() {
               <button className=" mt-1 underline">Forgot password?</button>{' '}
               <br />
               <button className=" mt-1 underline">
-                Don't have account? <span className="bg-indigo-600 p-1 rounded-full text-white px-4 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"> Register</span>
+                Don't have account? <span > Register</span>
               </button>
             </div>
           </form>
