@@ -6,9 +6,6 @@ import { login } from './app/slices/authSlice';
 import { useDispatch } from 'react-redux';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-import Footer from './components/Footer';
-
-
 import Home from './pages/Home';
 import About from './pages/About';
 import Cart from './pages/Cart';
@@ -18,10 +15,15 @@ import Products from './pages/Products';
 import Product from './pages/Product';
 import Categories from './pages/Categories';
 import Search from './pages/Search';
-import Form from './pages/Form';
+import Contact from './pages/Contact';
+
+
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 import { updateCart } from './app/slices/cartSlice';
+import Footer from './components/Footer';
+
+
 
 
 function App() {
@@ -52,7 +54,6 @@ function App() {
 
   return (
     <div>
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
@@ -62,15 +63,15 @@ function App() {
         <Route path="products" element={<Products />} />
         <Route path="categories" element={<Categories />}/> 
         <Route path="search" element={<Search />} />
-        <Route path="form" element={<Form />} />
-        <Route path="form" element={<Form />} />
+        <Route path="contact" element={<Contact />} />
 
         <Route path="products/:id" element={<Product />} />
       </Routes>
       <br></br><br></br>
-      <Footer />
-    </div>
 
+      <Footer />
+      
+    </div>
 
   );
 }

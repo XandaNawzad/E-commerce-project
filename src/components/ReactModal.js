@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
 import ReactCarousel from './ReactCarousel';
+
 export default function ReactModal() {
   let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);

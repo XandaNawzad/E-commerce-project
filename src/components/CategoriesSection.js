@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import CategoryCard from './CategoryCard';
 import LoadingSpinner from './LoadingSpinner';
+
 export default function CategoriesSection() {
   const [categories, setCategories] = useState([]);
   const [err, setErr] = useState();
