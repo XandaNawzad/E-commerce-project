@@ -26,7 +26,7 @@ export default function SignupForm() {
     }),
 
     onSubmit: (values) => {
-      // make a post request
+   
 
       alert(JSON.stringify(values, null, 3));
     },
