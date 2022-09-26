@@ -3,7 +3,6 @@ import { login } from '../app/slices/authSlice';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-
 export default function Login() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -35,18 +34,18 @@ export default function Login() {
           <form className="grid grid-cols-1" onSubmit={submitHandler}>
             <h2 className="text-center mb-5 text-2xl font-bold">Login Page</h2>
 
-            <label htmlFor="username"> Email Address </label>
+            <label htmlFor="username"> Username</label>
             <input
               className="bg-gray-100 rounded-md mb-3 text-2xl"
               type="text"
-              name="Email address"
-              id="Email address"
-              value={form.emailaddresss || ''}
+              name="username"
+              id="username"
+              value={form.username || ''}
               onChange={onChangeHandler}
             />
             <label htmlFor="password"> Password</label>
             <input
-              className="bg-gray-100 rounded-md mb-3 focus:ring-2 text-2xl"
+              className="bg-gray-100 rounded-md mb-3 focus:ring-2 text-2xl "
               type="password"
               name="password"
               id="password"
@@ -55,8 +54,6 @@ export default function Login() {
             />
 
             <br></br>
-
- 
 
             <button
               type="submit"
@@ -69,7 +66,7 @@ export default function Login() {
               <button className=" mt-1 underline">Forgot password?</button>{' '}
               <br />
               <button className=" mt-1 underline">
-                Don't have account? <span > Register</span>
+                Don't have account? Register.
               </button>
             </div>
           </form>

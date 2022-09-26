@@ -79,8 +79,7 @@ export default function SignupForm() {
       {formik.touched.password && formik.errors.password ? (
         <p className="text-red-500"> {formik.errors.password}</p>
       ) : null }
-           
-        
+              
      <br></br><br></br>
 
      
